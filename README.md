@@ -1,47 +1,63 @@
 # 🎓 Student Grade Management Program
 
-A Python-based student grade management application developed for **CS 1101 – Programming Fundamentals (Unit 3)**. This project demonstrates the practical implementation of **for loops, while loops, break statements, continue statements, nested loops, input validation, and average grade calculation** within a real-world educational scenario.
+A Python-based student grade management application developed for **CS 1101 – Programming Fundamentals (Unit 3)**. This project demonstrates the practical use of **for loops, while loops, break statements, continue statements, nested loops, input validation, and average grade calculation** within a real-world educational scenario.
 
 ---
 
-## 📋 Features
+# 📖 Overview
 
-* Display student names using **for loops**
-* Record grades using **while loops**
-* Stop grade entry using **break**
-* Skip invalid grades using **continue**
-* Validate user input
-* Calculate class averages
-* Organize students by class using **nested loops**
-* Console-based interface
-* Beginner-friendly Python implementation
+The goal of this project is to help a teacher manage student grades efficiently. The program can:
 
----
+* Display student names.
+* Record student grades.
+* Validate user input.
+* Skip invalid entries.
+* Allow the teacher to stop grade entry at any time.
+* Calculate the class average.
+* Organize students according to their classes.
 
-## 🛠 Technologies Used
-
-| Technology | Purpose                   |
-| ---------- | ------------------------- |
-| Python 3.x | Core programming language |
-| VS Code    | Development environment   |
-| Git        | Version control           |
-| GitHub     | Source code hosting       |
+The project was developed as part of the Unit 3 discussion assignment on Python loops and loop-control statements.
 
 ---
 
-## 📦 Installation
+# ✨ Features
 
-### Option 1: Clone Repository
+* Student name display using **for loops**
+* Grade entry system using **while loops**
+* Grade validation
+* Error handling for invalid inputs
+* Early program termination using **break**
+* Invalid input skipping using **continue**
+* Class average calculation
+* Student organization by class using **nested loops**
+* Beginner-friendly Python code
+
+---
+
+# 🛠 Technologies Used
+
+| Technology | Purpose                 |
+| ---------- | ----------------------- |
+| Python 3.x | Programming Language    |
+| Git        | Version Control         |
+| GitHub     | Repository Hosting      |
+| VS Code    | Development Environment |
+
+---
+
+# 📦 Installation
+
+## Option 1: Clone the Repository
 
 ```bash
-git clone https://github.com/USERNAME/student-grade-management.git
+git clone https://github.com/YOUR_USERNAME/student-grade-management.git
 
 cd student-grade-management
 ```
 
 ---
 
-### Debian / Ubuntu / Linux Mint
+## Debian / Ubuntu / Linux Mint
 
 Install Python:
 
@@ -57,7 +73,7 @@ Verify installation:
 python3 --version
 ```
 
-Run program:
+Run the application:
 
 ```bash
 python3 student_grade_management.py
@@ -65,7 +81,7 @@ python3 student_grade_management.py
 
 ---
 
-### Fedora
+## Fedora
 
 Install Python:
 
@@ -79,7 +95,7 @@ Verify installation:
 python3 --version
 ```
 
-Run program:
+Run the application:
 
 ```bash
 python3 student_grade_management.py
@@ -87,7 +103,7 @@ python3 student_grade_management.py
 
 ---
 
-### Arch Linux / Manjaro
+## Arch Linux / Manjaro
 
 Install Python:
 
@@ -101,7 +117,7 @@ Verify installation:
 python --version
 ```
 
-Run program:
+Run the application:
 
 ```bash
 python student_grade_management.py
@@ -109,15 +125,13 @@ python student_grade_management.py
 
 ---
 
-## ⬇ Download Executable
+# ⬇ Download Executable
 
-If you do not wish to install Python, download the standalone executable:
+If you do not want to install Python, download the standalone executable version.
 
 **Google Drive Download**
 
 https://drive.google.com/file/d/YOUR_FILE_ID/view
-
-After downloading:
 
 ### Windows
 
@@ -135,27 +149,27 @@ chmod +x StudentGradeManagement
 
 ---
 
-## 🚀 Usage
+# 🚀 Usage
 
-Run the application:
+Run the program:
 
 ```bash
 python3 student_grade_management.py
 ```
 
-The program will:
+The application will:
 
 1. Display all student names.
-2. Accept grade input.
-3. Validate entries.
+2. Accept grade entries.
+3. Validate user input.
 4. Skip invalid grades.
-5. Allow early termination.
-6. Calculate class average.
+5. Allow the teacher to stop grade entry.
+6. Calculate the class average.
 7. Display students organized by class.
 
 ---
 
-## 💻 Sample Output
+# 💻 Sample Output
 
 ```text
 Student List:
@@ -202,7 +216,155 @@ Student: David
 
 ---
 
-## 📂 Project Structure
+# 🎯 Learning Outcomes
+
+This project demonstrates the ability to:
+
+* Explain how for loops iterate through sequences.
+* Discuss while loop structures.
+* Apply break statements effectively.
+* Apply continue statements effectively.
+* Create nested loop structures.
+* Validate user input.
+* Calculate averages using Python.
+* Develop a practical real-world application.
+
+---
+
+# 📚 Assignment Requirements & Implementation
+
+This project was developed to solve the **Managing Student Grades** scenario from the Unit 3 Discussion Assignment.
+
+---
+
+## Question 1 – For Loop
+
+### Requirement
+
+Print each student's name from a list.
+
+### Implementation
+
+The program uses a **for loop** to iterate through the student list and display each student's name.
+
+```python
+students = ["Alice", "Ben", "Chloe", "David"]
+
+for student in students:
+    print(f"Student Name: {student}")
+```
+
+### Concept Demonstrated
+
+* For Loop
+* List Iteration
+* Sequence Processing
+
+---
+
+## Question 2 – While Loop
+
+### Requirement
+
+Repeatedly ask the teacher to enter grades until they type `"done"`.
+
+### Implementation
+
+The program uses a **while loop** to continuously collect grade information until the teacher decides to stop.
+
+```python
+grade = ""
+
+while grade.lower() != "done":
+    grade = input("Enter a grade or type 'done' to finish: ")
+
+    if grade.lower() != "done":
+        print(f"Grade recorded: {grade}")
+```
+
+### Concept Demonstrated
+
+* While Loop
+* Conditional Repetition
+* User-Controlled Input
+
+---
+
+## Question 3 – Break and Continue
+
+### Requirement
+
+Use:
+
+* `break` to stop entering grades completely.
+* `continue` to skip invalid grades.
+
+### Implementation
+
+The program uses a robust validation system that prevents invalid data from being processed.
+
+```python
+while True:
+    grade = input("Enter a grade or type 'stop' to end: ")
+
+    if grade.lower() == "stop":
+        print("Grade entry stopped.")
+        break
+
+    try:
+        grade = float(grade)
+    except ValueError:
+        print("Please enter a valid number.")
+        continue
+
+    if grade < 0:
+        print("Invalid grade.")
+        continue
+
+    print(f"Grade accepted: {grade}")
+```
+
+### Concept Demonstrated
+
+* Break Statement
+* Continue Statement
+* Input Validation
+* Error Handling
+
+---
+
+## Question 4 – Nested Loops
+
+### Requirement
+
+Print all student names organized by class.
+
+### Implementation
+
+The program uses a nested loop where:
+
+* The outer loop processes classes.
+* The inner loop processes students within each class.
+
+```python
+classes = [["Alice", "Ben"], ["Chloe", "David"]]
+
+for class_number, classroom in enumerate(classes, start=1):
+    print(f"\nClass {class_number}")
+
+    for student in classroom:
+        print(f"Student: {student}")
+```
+
+### Concept Demonstrated
+
+* Nested Loops
+* Multi-Level Iteration
+* Hierarchical Data Processing
+
+---
+
+# 📂 Project Structure
 
 ```text
 student-grade-management/
@@ -210,41 +372,14 @@ student-grade-management/
 ├── README.md
 ├── student_grade_management.py
 ├── StudentGradeManagement.exe
+├── LICENSE
 └── screenshots/
     └── sample-output.png
 ```
 
 ---
 
-## 🎯 Learning Outcomes
-
-This project demonstrates the ability to:
-
-* Explain how for loops iterate over sequences.
-* Discuss while loop structures.
-* Apply break and continue statements.
-* Create nested loop structures.
-* Validate user input.
-* Build a practical Python application.
-* Apply programming concepts to a real-world educational scenario.
-
----
-
-## 📚 Assignment Concepts Covered
-
-| Unit 3 Concept      | Implemented |
-| ------------------- | ----------- |
-| For Loop            | ✅           |
-| While Loop          | ✅           |
-| Break Statement     | ✅           |
-| Continue Statement  | ✅           |
-| Nested Loop         | ✅           |
-| Input Validation    | ✅           |
-| Average Calculation | ✅           |
-
----
-
-## 👨‍💻 Author
+# 👨‍💻 Author
 
 **Sourab Ghosh**
 
@@ -254,6 +389,14 @@ University of the People
 
 ---
 
-## 📜 License
+# 📜 License
 
 This project is provided for educational purposes as part of a university programming assignment.
+
+---
+
+# 🔗 Repository
+
+GitHub Repository:
+
+https://github.com/YOUR_USERNAME/student-grade-management
