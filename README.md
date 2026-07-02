@@ -50,7 +50,7 @@ The project was developed as part of the Unit 3 discussion assignment on Python 
 ## Option 1: Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/student-grade-management-system
+git clone https://github.com/sourabghosh108-cc1/student-grade-management-system
 
 cd student-grade-management
 ```
