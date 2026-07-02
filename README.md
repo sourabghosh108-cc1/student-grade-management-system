@@ -264,32 +264,6 @@ student-grade-management-system/
 
 ---
 
-# 📸 Screenshots
-
-## Student List Display
-
-*Insert Screenshot Here*
-
----
-
-## Grade Entry and Validation
-
-*Insert Screenshot Here*
-
----
-
-## Student Grades and Average
-
-*Insert Screenshot Here*
-
----
-
-## Students Organized by Class
-
-*Insert Screenshot Here*
-
----
-
 # 👨‍💻 Author
 
 **Sourab Ghosh**
