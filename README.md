@@ -50,7 +50,7 @@ The project was developed as part of the Unit 3 discussion assignment on Python 
 ## Option 1: Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/student-grade-management.git
+git clone https://github.com/YOUR_USERNAME/student-grade-management-system
 
 cd student-grade-management
 ```
@@ -76,7 +76,7 @@ python3 --version
 Run the application:
 
 ```bash
-python3 student_grade_management.py
+python3 disc3.py
 ```
 
 ---
@@ -98,7 +98,7 @@ python3 --version
 Run the application:
 
 ```bash
-python3 student_grade_management.py
+python3 disc3.py
 ```
 
 ---
@@ -120,7 +120,7 @@ python --version
 Run the application:
 
 ```bash
-python student_grade_management.py
+python disc3.py
 ```
 
 ---
@@ -131,21 +131,14 @@ If you do not want to install Python, download the standalone executable version
 
 **Google Drive Download**
 
-https://drive.google.com/file/d/YOUR_FILE_ID/view
+https://drive.google.com/file/d/1ml2zEkNEJk2w97HBNqtQrOmLeZSZOQLj/view?usp=sharing
 
 ### Windows
 
 ```text
-Double-click StudentGradeManagement.exe
+Double-click disc3.exe
 ```
 
-### Linux
-
-```bash
-chmod +x StudentGradeManagement
-
-./StudentGradeManagement
-```
 
 ---
 
@@ -154,7 +147,7 @@ chmod +x StudentGradeManagement
 Run the program:
 
 ```bash
-python3 student_grade_management.py
+python3 disc3.py
 ```
 
 The application will:
@@ -399,4 +392,4 @@ This project is provided for educational purposes as part of a university progra
 
 GitHub Repository:
 
-https://github.com/YOUR_USERNAME/student-grade-management
+https://github.com/sourabghosh108-cc1/student-grade-management-system
