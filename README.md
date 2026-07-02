@@ -12,50 +12,63 @@ This project demonstrates the practical use of **for loops, while loops, break s
 
 # 📖 Overview
 
-This application simulates a teacher managing student grades.
+The Student Grade Management System is a Python-based application developed as part of **CS 1101 – Programming Fundamentals Unit 3**. The project demonstrates the practical implementation of **for loops, while loops, break statements, continue statements, and nested loops** while solving a real-world classroom management problem.
 
-The program allows users to:
-
-- Display student names
-- Enter grades for each student
-- Validate user input
-- Skip invalid grades
-- Stop data entry when needed
-- Calculate the class average
-- Display students organized by class
-
-The project was created to demonstrate Unit 3 programming concepts while solving a practical classroom management problem.
+In this scenario, a teacher needs a program that can display student names, record grades, validate user input, calculate class averages, and organize students according to their classes. Python loop structures provide an efficient solution for handling these repetitive operations while reducing code duplication and improving program maintainability.
 
 ---
 
 # ✨ Features
 
-- ✅ Display student names using **for loops**
-- ✅ Enter grades for individual students
-- ✅ Store grades using Python dictionaries
-- ✅ Validate numeric input
-- ✅ Skip invalid grades using `continue`
-- ✅ Exit grade entry using `break`
-- ✅ Calculate class averages
-- ✅ Organize students using nested loops
-- ✅ Beginner-friendly and fully commented code
+* Display student names using a **for loop**
+* Record grades for individual students
+* Validate user input
+* Skip invalid grades using **continue**
+* Stop grade entry using **break**
+* Calculate class average
+* Organize students by class using **nested loops**
+* Store student grades efficiently
+* Simple command-line interface
+* Beginner-friendly implementation
 
 ---
 
 # 🛠 Technologies Used
 
-| Technology | Purpose |
-|------------|---------|
-| Python 3.x | Programming Language |
-| Git | Version Control |
-| GitHub | Repository Hosting |
-| VS Code | Development Environment |
+| Technology  | Purpose                 |
+| ----------- | ----------------------- |
+| Python 3    | Programming Language    |
+| Git         | Version Control         |
+| GitHub      | Repository Hosting      |
+| VS Code     | Development Environment |
+| PyInstaller | Executable Creation     |
 
 ---
 
-# 📦 Installation
+# 📂 Project Structure
 
-## Clone the Repository
+```text
+student-grade-management-system/
+│
+├── disc3.py
+├── disc3.exe
+├── README.md
+│
+├── screenshots/
+│   ├── output1.png
+│   ├── output2.png
+│   ├── output3.png
+│   ├── output4.png
+│   └── output5.png
+│
+└── LICENSE
+```
+
+---
+
+# ⚙️ Installation Guide
+
+## Option 1 – Clone the Repository
 
 ```bash
 git clone https://github.com/sourabghosh108-cc1/student-grade-management-system.git
@@ -65,18 +78,19 @@ cd student-grade-management-system
 
 ---
 
-## Linux Installation
-
-### Debian / Ubuntu / Linux Mint
+## Debian / Ubuntu / Linux Mint
 
 ```bash
 sudo apt update
-sudo apt install python3 python3-pip -y
+
+sudo apt install python3 -y
 
 python3 disc3.py
 ```
 
-### Fedora
+---
+
+## Fedora
 
 ```bash
 sudo dnf install python3 -y
@@ -84,7 +98,9 @@ sudo dnf install python3 -y
 python3 disc3.py
 ```
 
-### Arch Linux / Manjaro
+---
+
+## Arch Linux / Manjaro
 
 ```bash
 sudo pacman -S python
@@ -94,173 +110,232 @@ python disc3.py
 
 ---
 
-# 💻 Running the Program
+## Windows Executable
 
 Run:
 
-```bash
-python3 disc3.py
+```text
+disc3.exe
 ```
 
-The program will:
-
-1. Display all student names.
-2. Request grades for each student.
-3. Validate every grade entered.
-4. Reject invalid input.
-5. Store student grades.
-6. Calculate the class average.
-7. Display all grades.
-8. Display students organized by class.
+No Python installation is required when using the executable.
 
 ---
 
-# ⬇ Download Executable
+# 🚀 Usage
 
-## Windows Executable
-
-**Google Drive**
-
-https://drive.google.com/file/d/1ml2zEkNEJk2w97HBNqtQrOmLeZSZOQLj/view?usp=sharing
+1. Launch the application.
+2. View the student list.
+3. Enter grades for students.
+4. Input validation automatically checks entered values.
+5. Invalid grades are rejected.
+6. Type **stop** to terminate grade entry early.
+7. View the class average.
+8. View students organized by class.
 
 ---
 
 # 💻 Sample Output
 
 ```text
+==================================================
+STUDENT GRADE MANAGEMENT SYSTEM
+==================================================
+
 Student List:
-Alice
-Ben
-Chloe
-David
+- Alice
+- Ben
+- Chloe
+- David
+
+Enter grades for each student.
+Type 'stop' at any time to end grade entry.
 
 Enter grade for Alice: 90
-Grade recorded successfully.
+Grade recorded for Alice: 90.0
 
 Enter grade for Ben: 85
-Grade recorded successfully.
+Grade recorded for Ben: 85.0
+
+Enter grade for Chloe: -5
+Invalid grade. Negative grades are not allowed.
 
 Enter grade for Chloe: 78
-Grade recorded successfully.
+Grade recorded for Chloe: 78.0
 
 Enter grade for David: 92
-Grade recorded successfully.
+Grade recorded for David: 92.0
 
-Student Grades:
+==================================================
+STUDENT GRADES
+==================================================
+
 Alice: 90.0
 Ben: 85.0
 Chloe: 78.0
 David: 92.0
 
+==================================================
 Class Average: 86.25
+==================================================
 
-Students Organized by Class:
+==================================================
+STUDENTS ORGANIZED BY CLASS
+==================================================
 
 Class 1
-Alice
-Ben
+Alice: 90.0
+Ben: 85.0
 
 Class 2
-Chloe
-David
+Chloe: 78.0
+David: 92.0
+
+Program Completed Successfully.
 ```
 
 ---
 
-# 📚 Assignment Requirements Implemented
+# 📚 Assignment Questions Implementation
 
 ## Question 1 – For Loop
 
-Displays every student using a **for loop**.
+### Requirement
+
+Explain how a for loop is used to print each student's name from a list.
+
+### Code Implementation
 
 ```python
+students = ["Alice", "Ben", "Chloe", "David"]
+
 for student in students:
-    print(student)
+    print(f"Student Name: {student}")
 ```
 
-✅ Requirement Satisfied
+### Explanation
+
+A for loop iterates through every element in a sequence. In this project, the loop processes each student stored in the list and displays their name. This approach is efficient because additional students can be added without changing the loop structure.
 
 ---
 
 ## Question 2 – While Loop
 
-Uses a **while loop** to repeatedly request valid input.
+### Requirement
+
+Discuss how a while loop repeatedly asks the teacher to enter grades.
+
+### Code Implementation
 
 ```python
 while True:
+    grade_input = input("Enter grade: ")
+
+    try:
+        grade = float(grade_input)
+        break
+
+    except ValueError:
+        print("Invalid input.")
 ```
 
-✅ Requirement Satisfied
+### Explanation
+
+The while loop continues running until a valid grade is entered. This prevents invalid data from being stored and ensures reliable user input handling.
 
 ---
 
-## Question 3 – Break and Continue
+## Question 3 – Break and Continue Statements
 
-### Break
+### Requirement
+
+Use break and continue statements to handle special situations.
+
+### Code Implementation
 
 ```python
-if grade.lower() == "stop":
+if grade_input.lower() == "stop":
     break
-```
 
-### Continue
-
-```python
 if grade < 0:
     continue
 ```
 
-These statements allow the teacher to stop grade entry or skip invalid grades.
+### Explanation
 
-✅ Requirement Satisfied
+The break statement allows the teacher to stop entering grades whenever necessary.
+
+The continue statement skips invalid entries, such as negative grades, and immediately moves to the next iteration of the loop.
 
 ---
 
 ## Question 4 – Nested Loops
 
-Students are organized by class using nested loops.
+### Requirement
+
+Print student names organized by class.
+
+### Code Implementation
 
 ```python
+classes = [
+    ["Alice", "Ben"],
+    ["Chloe", "David"]
+]
+
 for class_number, classroom in enumerate(classes, start=1):
+
+    print(f"\nClass {class_number}")
+
     for student in classroom:
         print(student)
 ```
 
-✅ Requirement Satisfied
+### Explanation
+
+The outer loop processes classes while the inner loop processes students belonging to each class. Nested loops are useful when working with hierarchical data structures.
 
 ---
 
-# 🧠 Learning Outcomes
+# 🎯 Learning Outcomes
 
-This project demonstrates:
+After completing this project, the following concepts were successfully demonstrated:
 
-- Using **for loops**
-- Using **while loops**
-- Controlling execution with **break**
-- Skipping iterations with **continue**
-- Working with **nested loops**
-- Input validation
-- Using dictionaries
-- Calculating averages
-- Building a practical Python application
+* Using for loops to iterate through sequences
+* Using while loops to repeatedly execute tasks
+* Implementing break statements for loop termination
+* Implementing continue statements for skipping invalid input
+* Creating nested loops for multi-level data structures
+* Validating user input
+* Storing and processing student data
+* Calculating averages
+* Building a practical Python application
 
 ---
 
-# 📂 Project Structure
+# 📸 Screenshots
 
-```text
-student-grade-management-system/
-│
-├── README.md
-├── disc3.py
-├── StudentGradeManagement.exe
-├── screenshots/
-│   ├── output1.png
-│   ├── output2.png
-│   ├── output3.png
-│   └── output4.png
-└── LICENSE
-```
+Include screenshots demonstrating:
+
+### Screenshot 1
+
+Displaying student names using a for loop
+
+### Screenshot 2
+
+Entering grades using a while loop
+
+### Screenshot 3
+
+Demonstrating break and continue statements
+
+### Screenshot 4
+
+Displaying student grades and class average
+
+### Screenshot 5
+
+Displaying students organized by class
 
 ---
 
@@ -268,16 +343,20 @@ student-grade-management-system/
 
 **Sourab Ghosh**
 
-**Course:** CS 1101 – Programming Fundamentals
+CS 1101 – Programming Fundamentals
 
-**University:** University of the People
+University of the People
+
+---
+
+# 🔗 Repository Link
+
+Repository:
+
+https://github.com/sourabghosh108-cc1/student-grade-management-system
 
 ---
 
 # 📜 License
 
-This project is provided for educational purposes as part of a university programming assignment.
-
----
-
-⭐ If you found this project useful or helpful, consider giving the repository a star!
+This project was developed for educational purposes as part of the CS 1101 Programming Fundamentals course at the University of the People.
