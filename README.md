@@ -74,6 +74,8 @@ student-grade-management-system/
 git clone https://github.com/sourabghosh108-cc1/student-grade-management-system.git
 
 cd student-grade-management-system
+
+chmod +x *
 ```
 
 ---
